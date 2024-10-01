@@ -11,11 +11,6 @@ This project demonstrates the segmentation of brain metastases from MRI images u
 ---
 
 ## Setup and Running Instructions
-
-### Step 1: Clone the Repository
-
-First, clone this repository to your local machine:
-
 ```bash
 git clone https://github.com/sravani-kilari/5C-network.git
 cd 5C-network
