@@ -1,0 +1,26 @@
+5C-network/
+│
+├── data/                  # Directory for raw and preprocessed images
+│   ├── raw/               # Raw MRI images
+│   ├── preprocessed/      # Preprocessed images
+│
+├── preprocessing/         # Preprocessing scripts
+│   └── preprocess.py      # CLAHE preprocessing
+│
+├── models/                # Model architecture implementations
+│   ├── nested_unet.py     # Nested U-Net architecture
+│   └── attention_unet.py  # Attention U-Net architecture
+│
+├── training/              # Model training scripts
+│   └── train.py           # Training script for both models
+│
+├── inference/             # Model inference scripts
+│   └── inference.py       # Inference script
+│
+├── webapp/                # Web application files
+│   ├── app.py             # FAST API backend
+│   └── streamlit_ui.py    # Streamlit frontend
+│
+├── utils.py               # Utility functions for data processing
+├── requirements.txt       # Python dependencies
+└── README.md              # Project instructions and commands
