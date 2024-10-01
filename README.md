@@ -19,3 +19,4 @@ First, clone this repository to your local machine:
 ```bash
 git clone https://github.com/sravani-kilari/5C-network.git
 cd 5C-network
+pip install -r requirements.txt
