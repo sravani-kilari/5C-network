@@ -20,3 +20,10 @@ First, clone this repository to your local machine:
 git clone https://github.com/sravani-kilari/5C-network.git
 cd 5C-network
 pip install -r requirements.txt
+python preprocessing/preprocess.py --input_dir data/raw --output_dir data/preprocessed
+python training/train.py --model nested_unet --epochs 50 --batch_size 16 --lr 0.001 --device cuda
+python inference/inference.py --model_path path/to/nested_unet_weights.pth --model nested_unet --input_image path/to/input_image.png --output_image path/to/output_mask.png
+python inference/inference.py --model_path path/to/attention_unet_weights.pth --model attention_unet --input_image path/to/input_image.png --output_image path/to/output_mask.png
+uvicorn webapp.app:app --reload
+streamlit run webapp/streamlit_ui.py
+
